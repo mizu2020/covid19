@@ -61,7 +61,7 @@ export default Vue.extend({
       Data,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: this.$t('テストテストテスト'),
+        title: this.$t('ぐんぐん'),
         date: Data.lastUpdate
       },
       newsItems: News.newsItems
@@ -70,7 +70,7 @@ export default Vue.extend({
   },
   head(): MetaInfo {
     return {
-      title: this.$t('テストテストテスト') as string
+      title: this.$t('ぐんぐんぐん') as string
     }
   }
 })
