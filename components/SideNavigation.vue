@@ -120,7 +120,7 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('都内の最新感染動向'),
+          title: this.$t('最新感染動向'),
           link: this.localePath('/')
         },
         //{

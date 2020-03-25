@@ -1,8 +1,8 @@
 export default {
   strategy: 'prefix_except_default',
   detectBrowserLanguage: {
-    useCookie: true,
-    cookieKey: 'i18n_redirected'
+    /* useCookie: true,
+    cookieKey: 'i18n_redirected' */
   },
   defaultLocale: 'ja',
   vueI18n: {
@@ -19,7 +19,7 @@ export default {
       iso: 'ja-JP',
       file: 'ja.json'
     },
-    {
+    /* {
       code: 'en',
       name: 'English',
       iso: 'en-US',
@@ -56,6 +56,6 @@ export default {
       name: 'やさしい にほんご',
       iso: 'ja-JP',
       file: 'ja-Hira.json'
-    }
+    } */
   ]
 }
