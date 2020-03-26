@@ -13,41 +13,41 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 東京都 新型コロナウイルス感染症対策サイト',
+    titleTemplate: '%s | ぐんぐん 新型コロナウイルス感染症対策サイト',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp'
-      },
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        hid: 'twitter:site',
-        name: 'twitter:site',
-        content: '@tokyo_bousai'
-      },
-      {
-        hid: 'twitter:creator',
-        name: 'twitter:creator',
-        content: '@tokyo_bousai'
-      },
-      {
-        hid: 'fb:app_id',
-        property: 'fb:app_id',
-        content: '2879625188795443'
-      },
-      {
-        hid: 'note:card',
-        property: 'note:card',
-        content: 'summary_large_image'
-      }
+      //{
+      //  hid: 'og:url',
+      //  property: 'og:url',
+      //  content: 'https://stopcovid19.metro.tokyo.lg.jp'
+      //},
+      //{
+      //  hid: 'twitter:card',
+      //  name: 'twitter:card',
+      //  content: 'summary_large_image'
+      //},
+      //{
+      //  hid: 'twitter:site',
+      //  name: 'twitter:site',
+      //  content: '@tokyo_bousai'
+      //},
+      //{
+      //  hid: 'twitter:creator',
+      //  name: 'twitter:creator',
+      //  content: '@tokyo_bousai'
+      //},
+      //{
+      //  hid: 'fb:app_id',
+      //  property: 'fb:app_id',
+      //  content: '2879625188795443'
+      //},
+      //{
+      //  hid: 'note:card',
+      //  property: 'note:card',
+      //  content: 'summary_large_image'
+      //}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -122,7 +122,7 @@ const config: Configuration = {
     }
   },
   googleAnalytics: {
-    id: 'UA-159417676-1'
+    /* id: 'UA-159417676-1' */
   },
   build: {
     postcss: {
@@ -145,7 +145,7 @@ const config: Configuration = {
     hardSource: process.env.NODE_ENV === 'development'
   },
   manifest: {
-    name: '東京都 新型コロナウイルス感染症対策サイト',
+    name: 'ぐんぐん 新型コロナウイルス感染症対策サイト',
     theme_color: '#00a040',
     background_color: '#ffffff',
     display: 'standalone',
@@ -158,14 +158,14 @@ const config: Configuration = {
     routes() {
       const locales = ['ja', 'en', 'zh-cn', 'zh-tw', 'ko', 'ja-basic']
       const pages = [
-        '/cards/details-of-confirmed-cases',
+      //  '/cards/details-of-confirmed-cases',
         '/cards/number-of-confirmed-cases',
-        '/cards/attributes-of-confirmed-cases',
+      //  '/cards/attributes-of-confirmed-cases',
         '/cards/number-of-tested',
-        '/cards/number-of-reports-to-covid19-telephone-advisory-center',
+      //  '/cards/number-of-reports-to-covid19-telephone-advisory-center',
         '/cards/number-of-reports-to-covid19-consultation-desk',
-        '/cards/predicted-number-of-toei-subway-passengers',
-        '/cards/agency'
+      //  '/cards/predicted-number-of-toei-subway-passengers',
+      //  '/cards/agency'
       ]
 
       const routes: string[] = []

@@ -6,13 +6,13 @@
     <TextCard>
       {{
         $t(
-          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、ぐんぐんが開設したものです。'
         )
       }}<br />
       <br />
       {{
         $t(
-          '東京都による公式情報と客観的な数値をわかりやすく伝えることで、東京都にお住まいの方や、東京都内に拠点を持つ企業の方、東京都を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
+          'ぐんぐんによる公式情報と客観的な数値をわかりやすく伝えることで、ぐんぐんにお住まいの方や、ぐんぐん内に拠点を持つ企業の方、ぐんぐんを訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
         )
       }}
     </TextCard>
@@ -68,61 +68,61 @@
         )
       }}
     </TextCard>
-    <TextCard :title="$t('Google Analyticsの利用について')">
+    <!-- TextCard :title="$t('Google Analyticsの利用について')" -->
       {{
-        $t(
+        /* $t(
           '当サイトでは、サービス向上やサイトの改善のためにGoogle LLCの提供するアクセス分析のツールであるGoogle Analyticsを利用した計測を行っております。'
-        )
-      }}<br />
+        ) */
+      }}<!-- br / -->
       {{
-        $t(
+        /* $t(
           'Google Analyticsは、当サイトが発行するクッキー (Cookie) を利用して、個人を特定する情報を含まずにWebサイトの利用データ（アクセス状況、トラフィック、閲覧環境など）を収集しております。クッキー (Cookie) の利用に関してはGoogleのプライバシーポリシーと規約に基づいております。'
-        )
-      }}<br />
+        ) */
+      }}<!-- br / -->
       {{
-        $t(
+        /* $t(
           '取得したデータは Webサイト利用状況の分析、サイト運営者へのレポートの作成、その他のサービスの提供に関わる目的に限り、これを使用します。'
-        )
-      }}<br />
+        ) */
+      }}<!-- br / -->
       {{
-        $t(
+        /* $t(
           'Google Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google Analyticsのサイトをご覧ください。'
-        )
-      }}<br />
-      <ul>
-        <li>
-          <a
+        ) */
+      }}<!-- br / -->
+      <!-- ul -->
+        <!-- li -->
+          <!-- a
             href="https://marketingplatform.google.com/about/analytics/terms/jp"
             target="_blank"
             rel="noopener"
-          >
-            {{ $t('Google Analytics利用規約') }}
-          </a>
-        </li>
-        <li>
-          <a
+           -->
+            {{ /* $t('Google Analytics利用規約') */ }}
+          <!-- /a -->
+        <!-- /li -->
+        <!-- li -->
+          <!-- a
             href="https://policies.google.com/privacy?hl=ja"
             target="_blank"
             rel="noopener"
-          >
-            {{ $t('Googleのプライバシーポリシー') }}
-          </a>
-        </li>
-        <li>
-          <a
+           -->
+            {{ /* $t('Googleのプライバシーポリシー') */ }}
+          <!-- /a -->
+        <!-- /li -->
+        <!-- li -->
+          <!-- a
             href="https://support.google.com/analytics/answer/6004245"
             target="_blank"
             rel="noopener"
-          >
-            {{ $t('Google Analyticsに関する詳細情報') }}
-          </a>
-        </li>
-      </ul>
-    </TextCard>
+           -->
+            {{ /* $t('Google Analyticsに関する詳細情報') */ }}
+          <!-- /a -->
+        <!-- /li -->
+      <!-- /ul -->
+    <!-- /TextCard -->
     <TextCard :title="$t('免責事項')">
       {{
         $t(
-          '当サイトに掲載されている情報の正確性については万全を期していますが、東京都は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
+          '当サイトに掲載されている情報の正確性については万全を期していますが、ぐんぐんは利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
         )
       }}<br />
       <br />
@@ -138,43 +138,43 @@
         )
       }}
     </TextCard>
-    <TextCard :title="$t('データについて')">
-      <i18n
+    <!-- TextCard :title="$t('データについて')" -->
+      <!-- i18n
         tag="p"
         path="本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です）"
-      >
-        <a
+       -->
+        <!-- a
           href="https://portal.data.metro.tokyo.lg.jp/"
           target="_blank"
           rel="noopener"
           place="catalogWebsite"
-        >
-          {{ $t('東京都オープンデータカタログサイト') }}
-        </a>
-      </i18n>
-    </TextCard>
-    <TextCard :title="$t('ソースコードについて')">
+         -->
+          {{ /* $t('ぐんぐんオープンデータカタログサイト') */ }}
+        <!-- /a -->
+      <!-- /i18n -->
+    <!-- /TextCard -->
+    <!-- TextCard :title="$t('ソースコードについて')" -->
       {{
-        $t(
+        /* $t(
           '当サイトのソースコードはMITライセンスで公開されており、誰でも自由に利用することができます。'
-        )
+        ) */
       }}
-      <i18n path="詳しくは、{githubRepo}をご確認ください。">
-        <a
+      <!-- i18n path="詳しくは、{githubRepo}をご確認ください。" -->
+        <!-- a
           href="https://github.com/tokyo-metropolitan-gov/covid19"
           target="_blank"
           rel="noopener"
           place="githubRepo"
-        >
-          {{ $t('GitHub リポジトリ') }}
-        </a>
-      </i18n>
-    </TextCard>
-    <TextCard :title="$t('お問い合わせ先（都のHPサイトポリシーについて）')">
-      {{ $t('東京都生活文化局広報広聴部広報課') }}<br />
-      {{ $t('電話') }}:
-      <a href="tel:03-5388-3085">03-5388-3085</a>
-    </TextCard>
+         -->
+          {{ /* $t('GitHub リポジトリ') */ }}
+        <!-- /a -->
+      <!-- /i18n -->
+    <!-- /TextCard -->
+    <!-- TextCard :title="$t('お問い合わせ先（都のHPサイトポリシーについて）')" -->
+      {{ /* $t('東京都生活文化局広報広聴部広報課') */ }}<!-- br / -->
+      {{ /* $t('電話') */ }}:
+      <!-- a href="tel:03-5388-3085" --><!-- 03-5388-3085 --><!-- /a -->
+    <!-- /TextCard -->
   </div>
 </template>
 
